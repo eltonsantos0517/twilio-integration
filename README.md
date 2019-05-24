@@ -3,3 +3,5 @@ Configure your Twilio Personal account in: https://www.twilio.com/docs/usage/tut
 Fill your ACCOUNT SID and AUTH TOKEN into application.yaml
 
 Run de App :)
+
+Postman's Collection: https://www.getpostman.com/collections/ff02eae98f913cdfa3ef
