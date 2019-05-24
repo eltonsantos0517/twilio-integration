@@ -14,8 +14,19 @@ repositories {
 	mavenLocal()
 }
 
+ext {
+	set('springCloudVersion', "Greenwich.SR1")
+}
+
 dependencies {
+	implementation 'org.springframework.cloud:spring-cloud-starter-openfeign'
 	compile group: "com.twilio.sdk", name: "twilio", version: "7.38.0"
 	implementation 'org.springframework.boot:spring-boot-starter-web'
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "org.springframework.cloud:spring-cloud-dependencies:${springCloudVersion}"
+	}
 }

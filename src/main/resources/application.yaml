@@ -1,3 +1,7 @@
 twilio:
   account_sid: your_account_sid
   auth_token: yuour_auth_token
+
+mailgun:
+  domain_url: your_domain_url
+  token: your_token
